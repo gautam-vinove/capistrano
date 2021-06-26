@@ -49,3 +49,8 @@
   INFO ---------------------------------------------------------------------------
   INFO [9584007f] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
  DEBUG [9584007f] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 19:20:20 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [debba1f8] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
+ DEBUG [debba1f8] Command: /usr/bin/env mkdir -p /tmp
