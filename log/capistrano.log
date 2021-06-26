@@ -1,0 +1,51 @@
+# Logfile created on 2021-06-26 18:40:23 +0000 by logger.rb/v1.4.2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 18:40:23 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [74bb3f2b] Running /usr/bin/env mkdir -p /tmp as ubuntu@65.2.140.164
+ DEBUG [74bb3f2b] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 18:41:24 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8627c166] Running /usr/bin/env mkdir -p /tmp as ubuntu@172.31.36.242
+ DEBUG [8627c166] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 18:42:43 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [98df086f] Running /usr/bin/env mkdir -p /tmp as ubuntu@ip-172-31-36-242
+ DEBUG [98df086f] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 18:47:19 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7fe990c2] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
+ DEBUG [7fe990c2] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 19:07:11 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9358191b] Running /usr/bin/env mkdir -p /tmp as gautam@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
+ DEBUG [9358191b] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 19:12:59 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e0de4844] Running /usr/bin/env mkdir -p /tmp as gautam@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
+ DEBUG [e0de4844] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 19:13:27 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5e601ea0] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
+ DEBUG [5e601ea0] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 19:16:49 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e4f372ed] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
+ DEBUG [e4f372ed] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 19:17:40 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [64305988] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
+ DEBUG [64305988] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-26 19:18:07 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9584007f] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
+ DEBUG [9584007f] Command: /usr/bin/env mkdir -p /tmp
