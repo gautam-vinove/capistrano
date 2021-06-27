@@ -39,4 +39,6 @@ end
 # We only run danger once on a new-ish ruby; no need to install it otherwise
 if Gem::Requirement.new("> 2.4").satisfied_by?(Gem::Version.new(RUBY_VERSION))
   gem "danger"
+
+ gem 'puma'
 end
