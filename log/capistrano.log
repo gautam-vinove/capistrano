@@ -201,3 +201,552 @@
   INFO [745b6384] Running /usr/bin/env echo "Branch master (at 5e0fb17641978d3f77d5a281a25eead1edb80dfd) deployed as release 20210626192643 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
  DEBUG [745b6384] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 5e0fb17641978d3f77d5a281a25eead1edb80dfd) deployed as release 20210626192643 by ubuntu" >> /var/www/my_rail_app/revisions.log
   INFO [745b6384] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-27 14:20:47 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [88cf513f] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-65-2-140-164.ap-south-1.compute.amazonaws.com
+ DEBUG [88cf513f] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-27 14:24:04 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c53c62de] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [c53c62de] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-27 14:26:48 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [646876de] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [646876de] Command: /usr/bin/env mkdir -p /tmp
+  INFO [646876de] Finished in 0.493 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-f229591d0329c6334076.sh 0.0%
+  INFO Uploading /tmp/git-ssh-f229591d0329c6334076.sh 100.0%
+  INFO [700d1bd7] Running /usr/bin/env chmod 700 /tmp/git-ssh-f229591d0329c6334076.sh as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [700d1bd7] Command: /usr/bin/env chmod 700 /tmp/git-ssh-f229591d0329c6334076.sh
+  INFO [700d1bd7] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [bf2f72cf] Running /usr/bin/env git ls-remote git@github.com:gautam-vinove/capistrano.git HEAD as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [bf2f72cf] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f229591d0329c6334076.sh" ; /usr/bin/env git ls-remote git@github.com:gautam-vinove/capistrano.git HEAD )
+ DEBUG [bf2f72cf] 	80073f4494d1b66a464679c881fa05eeb7d20ca4	HEAD
+  INFO [bf2f72cf] Finished in 2.161 seconds with exit status 0 (successful).
+  INFO [07935d1d] Running /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [07935d1d] Command: /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases
+  INFO [07935d1d] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [b8ca9156] Running /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [b8ca9156] Command: /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases
+  INFO [b8ca9156] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [d0f37400] Running [ -f /var/www/my_rail_app/current/REVISION ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [d0f37400] Command: [ -f /var/www/my_rail_app/current/REVISION ]
+ DEBUG [d0f37400] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [32f53979] Running /usr/bin/env cat /var/www/my_rail_app/current/REVISION 2>/dev/null as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [32f53979] Command: /usr/bin/env cat /var/www/my_rail_app/current/REVISION 2>/dev/null
+ DEBUG [32f53979] 	5e0fb17641978d3f77d5a281a25eead1edb80dfd
+ DEBUG [32f53979] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [b124d825] Running [ -f /var/www/my_rail_app/current/REVISION ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [b124d825] Command: [ -f /var/www/my_rail_app/current/REVISION ]
+ DEBUG [b124d825] Finished in 0.003 seconds with exit status 0 (successful).
+ DEBUG [ad60e445] Running /usr/bin/env cat /var/www/my_rail_app/current/REVISION 2>/dev/null as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [ad60e445] Command: /usr/bin/env cat /var/www/my_rail_app/current/REVISION 2>/dev/null
+ DEBUG [ad60e445] 	5e0fb17641978d3f77d5a281a25eead1edb80dfd
+ DEBUG [ad60e445] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [ad7d8d35] Running [ -f /var/www/my_rail_app/repo/HEAD ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [ad7d8d35] Command: [ -f /var/www/my_rail_app/repo/HEAD ]
+ DEBUG [ad7d8d35] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/my_rail_app/repo
+ DEBUG [d522fcc4] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [d522fcc4] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [d522fcc4] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [ae56a0fe] Running /usr/bin/env git remote set-url origin git@github.com:gautam-vinove/capistrano.git as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [ae56a0fe] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f229591d0329c6334076.sh" ; /usr/bin/env git remote set-url origin git@github.com:gautam-vinove/capistrano.git )
+  INFO [ae56a0fe] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [1998377e] Running /usr/bin/env git remote update --prune as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [1998377e] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f229591d0329c6334076.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [1998377e] 	Fetching origin
+ DEBUG [1998377e] 	From github.com:gautam-vinove/capistrano
+   5e0fb176..80073f44  master     -> master
+  INFO [1998377e] Finished in 2.472 seconds with exit status 0 (successful).
+ DEBUG [f6439e44] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [f6439e44] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [f6439e44] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [6602a7a8] Running /usr/bin/env mkdir -p /var/www/my_rail_app/releases/20210627142651 as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [6602a7a8] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f229591d0329c6334076.sh" ; /usr/bin/env mkdir -p /var/www/my_rail_app/releases/20210627142651 )
+  INFO [6602a7a8] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [552beeb3] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/my_rail_app/releases/20210627142651 as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [552beeb3] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f229591d0329c6334076.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/my_rail_app/releases/20210627142651 )
+  INFO [552beeb3] Finished in 0.030 seconds with exit status 0 (successful).
+ DEBUG [1e822261] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [1e822261] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [1e822261] Finished in 0.003 seconds with exit status 0 (successful).
+ DEBUG [0d207b67] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [0d207b67] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f229591d0329c6334076.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [0d207b67] 	80073f4494d1b66a464679c881fa05eeb7d20ca4
+ DEBUG [0d207b67] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [3fc86a6d] Running if test ! -d /var/www/my_rail_app/releases/20210627142651; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627142651'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [3fc86a6d] Command: if test ! -d /var/www/my_rail_app/releases/20210627142651; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627142651'" 1>&2; false; fi
+ DEBUG [3fc86a6d] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [06a11c13] Running /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [06a11c13] Command: cd /var/www/my_rail_app/releases/20210627142651 && /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION
+  INFO [06a11c13] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [c0a731c3] Running if test ! -d /var/www/my_rail_app/releases/20210627142651; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627142651'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [c0a731c3] Command: if test ! -d /var/www/my_rail_app/releases/20210627142651; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627142651'" 1>&2; false; fi
+ DEBUG [c0a731c3] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [6173d8b0] Running /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [6173d8b0] Command: cd /var/www/my_rail_app/releases/20210627142651 && /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION
+  INFO [6173d8b0] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [a337355f] Running /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627142651 /var/www/my_rail_app/releases/current as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [a337355f] Command: /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627142651 /var/www/my_rail_app/releases/current
+  INFO [a337355f] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [5f731512] Running /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [5f731512] Command: /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app
+  INFO [5f731512] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [da1b1a50] Running /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627142651 /var/www/my_rail_app/releases/current as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [da1b1a50] Command: /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627142651 /var/www/my_rail_app/releases/current
+  INFO [da1b1a50] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [a85eebac] Running /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [a85eebac] Command: /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app
+  INFO [a85eebac] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [dd6727f2] Running /usr/bin/env ls -x /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [dd6727f2] Command: /usr/bin/env ls -x /var/www/my_rail_app/releases
+ DEBUG [dd6727f2] 	20210626192643	20210627142651
+ DEBUG [dd6727f2] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [b379000d] Running /usr/bin/env ls -x /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [b379000d] Command: /usr/bin/env ls -x /var/www/my_rail_app/releases
+ DEBUG [b379000d] 	20210626192643	20210627142651
+ DEBUG [b379000d] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [1d49fba5] Running if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [1d49fba5] Command: if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi
+ DEBUG [1d49fba5] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [f85065b0] Running /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627142651 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [f85065b0] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627142651 by ubuntu" >> /var/www/my_rail_app/revisions.log
+  INFO [f85065b0] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [6d484c08] Running if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [6d484c08] Command: if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi
+ DEBUG [6d484c08] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [66d3b1b7] Running /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627142651 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [66d3b1b7] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627142651 by ubuntu" >> /var/www/my_rail_app/revisions.log
+  INFO [66d3b1b7] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-27 14:39:01 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0748ac69] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [0748ac69] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0748ac69] Finished in 0.655 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-be4be9f001fdf04511ff.sh 0.0%
+  INFO Uploading /tmp/git-ssh-be4be9f001fdf04511ff.sh 100.0%
+  INFO [88ef909c] Running /usr/bin/env chmod 700 /tmp/git-ssh-be4be9f001fdf04511ff.sh as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [88ef909c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-be4be9f001fdf04511ff.sh
+  INFO [88ef909c] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [09ec9675] Running /usr/bin/env git ls-remote git@github.com:gautam-vinove/capistrano.git HEAD as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [09ec9675] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-be4be9f001fdf04511ff.sh" ; /usr/bin/env git ls-remote git@github.com:gautam-vinove/capistrano.git HEAD )
+ DEBUG [09ec9675] 	80073f4494d1b66a464679c881fa05eeb7d20ca4	HEAD
+  INFO [09ec9675] Finished in 2.514 seconds with exit status 0 (successful).
+  INFO [e6dfc24d] Running /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [e6dfc24d] Command: /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases
+  INFO [e6dfc24d] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [18e1da16] Running /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [18e1da16] Command: /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases
+  INFO [18e1da16] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [f517c0d0] Running [ -f /var/www/my_rail_app/current/REVISION ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [f517c0d0] Command: [ -f /var/www/my_rail_app/current/REVISION ]
+ DEBUG [f517c0d0] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [50082407] Running [ -f /var/www/my_rail_app/current/REVISION ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [50082407] Command: [ -f /var/www/my_rail_app/current/REVISION ]
+ DEBUG [50082407] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [1bf591a5] Running [ -f /var/www/my_rail_app/repo/HEAD ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [1bf591a5] Command: [ -f /var/www/my_rail_app/repo/HEAD ]
+ DEBUG [1bf591a5] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [f4a97112] Running if test ! -d /var/www/my_rail_app; then echo "Directory does not exist '/var/www/my_rail_app'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [f4a97112] Command: if test ! -d /var/www/my_rail_app; then echo "Directory does not exist '/var/www/my_rail_app'" 1>&2; false; fi
+ DEBUG [f4a97112] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [90d4818a] Running /usr/bin/env git clone --mirror git@github.com:gautam-vinove/capistrano.git /var/www/my_rail_app/repo as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [90d4818a] Command: cd /var/www/my_rail_app && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-be4be9f001fdf04511ff.sh" ; /usr/bin/env git clone --mirror git@github.com:gautam-vinove/capistrano.git /var/www/my_rail_app/repo )
+ DEBUG [90d4818a] 	Cloning into bare repository '/var/www/my_rail_app/repo'...
+  INFO [90d4818a] Finished in 3.817 seconds with exit status 0 (successful).
+ DEBUG [398c4cf4] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [398c4cf4] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [398c4cf4] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [2d9ab26e] Running /usr/bin/env git remote set-url origin git@github.com:gautam-vinove/capistrano.git as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [2d9ab26e] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-be4be9f001fdf04511ff.sh" ; /usr/bin/env git remote set-url origin git@github.com:gautam-vinove/capistrano.git )
+  INFO [2d9ab26e] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [a9b58f1a] Running /usr/bin/env git remote update --prune as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [a9b58f1a] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-be4be9f001fdf04511ff.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [a9b58f1a] 	Fetching origin
+  INFO [a9b58f1a] Finished in 2.226 seconds with exit status 0 (successful).
+ DEBUG [e7f93b05] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [e7f93b05] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [e7f93b05] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [c42590dc] Running /usr/bin/env mkdir -p /var/www/my_rail_app/releases/20210627143904 as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [c42590dc] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-be4be9f001fdf04511ff.sh" ; /usr/bin/env mkdir -p /var/www/my_rail_app/releases/20210627143904 )
+  INFO [c42590dc] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [09ac4986] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/my_rail_app/releases/20210627143904 as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [09ac4986] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-be4be9f001fdf04511ff.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/my_rail_app/releases/20210627143904 )
+  INFO [09ac4986] Finished in 0.029 seconds with exit status 0 (successful).
+ DEBUG [12f04565] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [12f04565] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [12f04565] Finished in 0.003 seconds with exit status 0 (successful).
+ DEBUG [a83ac541] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [a83ac541] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-be4be9f001fdf04511ff.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [a83ac541] 	80073f4494d1b66a464679c881fa05eeb7d20ca4
+ DEBUG [a83ac541] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [9c22496f] Running if test ! -d /var/www/my_rail_app/releases/20210627143904; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627143904'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [9c22496f] Command: if test ! -d /var/www/my_rail_app/releases/20210627143904; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627143904'" 1>&2; false; fi
+ DEBUG [9c22496f] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [9354efb0] Running /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [9354efb0] Command: cd /var/www/my_rail_app/releases/20210627143904 && /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION
+  INFO [9354efb0] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [4dc727ba] Running if test ! -d /var/www/my_rail_app/releases/20210627143904; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627143904'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [4dc727ba] Command: if test ! -d /var/www/my_rail_app/releases/20210627143904; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627143904'" 1>&2; false; fi
+ DEBUG [4dc727ba] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [0d09e9ea] Running /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [0d09e9ea] Command: cd /var/www/my_rail_app/releases/20210627143904 && /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION
+  INFO [0d09e9ea] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [0fed2f3e] Running /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627143904 /var/www/my_rail_app/releases/current as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [0fed2f3e] Command: /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627143904 /var/www/my_rail_app/releases/current
+  INFO [0fed2f3e] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [ba5ed999] Running /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [ba5ed999] Command: /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app
+  INFO [ba5ed999] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [9040c62c] Running /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627143904 /var/www/my_rail_app/releases/current as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [9040c62c] Command: /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627143904 /var/www/my_rail_app/releases/current
+  INFO [9040c62c] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [50458df5] Running /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [50458df5] Command: /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app
+  INFO [50458df5] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [0045c43e] Running /usr/bin/env ls -x /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [0045c43e] Command: /usr/bin/env ls -x /var/www/my_rail_app/releases
+ DEBUG [0045c43e] 	20210627143904
+ DEBUG [0045c43e] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [b9f5fa6e] Running /usr/bin/env ls -x /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [b9f5fa6e] Command: /usr/bin/env ls -x /var/www/my_rail_app/releases
+ DEBUG [b9f5fa6e] 	20210627143904
+ DEBUG [b9f5fa6e] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [2a3766e7] Running if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [2a3766e7] Command: if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi
+ DEBUG [2a3766e7] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [9b861b32] Running /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627143904 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [9b861b32] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627143904 by ubuntu" >> /var/www/my_rail_app/revisions.log
+  INFO [9b861b32] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [9a5134fc] Running if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [9a5134fc] Command: if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi
+ DEBUG [9a5134fc] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [dd77d1c4] Running /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627143904 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [dd77d1c4] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627143904 by ubuntu" >> /var/www/my_rail_app/revisions.log
+  INFO [dd77d1c4] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-27 14:45:55 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [34e86289] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [34e86289] Command: /usr/bin/env mkdir -p /tmp
+  INFO [34e86289] Finished in 0.488 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-4ddb3e2e91c23345a1fd.sh 0.0%
+  INFO Uploading /tmp/git-ssh-4ddb3e2e91c23345a1fd.sh 100.0%
+  INFO [135e2d23] Running /usr/bin/env chmod 700 /tmp/git-ssh-4ddb3e2e91c23345a1fd.sh as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [135e2d23] Command: /usr/bin/env chmod 700 /tmp/git-ssh-4ddb3e2e91c23345a1fd.sh
+  INFO [135e2d23] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [ab900645] Running /usr/bin/env git ls-remote git@github.com:gautam-vinove/capistrano.git HEAD as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [ab900645] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ddb3e2e91c23345a1fd.sh" ; /usr/bin/env git ls-remote git@github.com:gautam-vinove/capistrano.git HEAD )
+ DEBUG [ab900645] 	80073f4494d1b66a464679c881fa05eeb7d20ca4	HEAD
+  INFO [ab900645] Finished in 2.164 seconds with exit status 0 (successful).
+  INFO [2a518f87] Running /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [2a518f87] Command: /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases
+  INFO [2a518f87] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [249f2153] Running /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [249f2153] Command: /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases
+  INFO [249f2153] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [ddad9b94] Running [ -f /var/www/my_rail_app/current/REVISION ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [ddad9b94] Command: [ -f /var/www/my_rail_app/current/REVISION ]
+ DEBUG [ddad9b94] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [fa4f863f] Running [ -f /var/www/my_rail_app/current/REVISION ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [fa4f863f] Command: [ -f /var/www/my_rail_app/current/REVISION ]
+ DEBUG [fa4f863f] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [69804b00] Running [ -f /var/www/my_rail_app/repo/HEAD ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [69804b00] Command: [ -f /var/www/my_rail_app/repo/HEAD ]
+ DEBUG [69804b00] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [c446e34b] Running if test ! -d /var/www/my_rail_app; then echo "Directory does not exist '/var/www/my_rail_app'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [c446e34b] Command: if test ! -d /var/www/my_rail_app; then echo "Directory does not exist '/var/www/my_rail_app'" 1>&2; false; fi
+ DEBUG [c446e34b] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [e06fe85f] Running /usr/bin/env git clone --mirror git@github.com:gautam-vinove/capistrano.git /var/www/my_rail_app/repo as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [e06fe85f] Command: cd /var/www/my_rail_app && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ddb3e2e91c23345a1fd.sh" ; /usr/bin/env git clone --mirror git@github.com:gautam-vinove/capistrano.git /var/www/my_rail_app/repo )
+ DEBUG [e06fe85f] 	Cloning into bare repository '/var/www/my_rail_app/repo'...
+  INFO [e06fe85f] Finished in 3.791 seconds with exit status 0 (successful).
+ DEBUG [42ee5fe7] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [42ee5fe7] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [42ee5fe7] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [e922d1cf] Running /usr/bin/env git remote set-url origin git@github.com:gautam-vinove/capistrano.git as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [e922d1cf] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ddb3e2e91c23345a1fd.sh" ; /usr/bin/env git remote set-url origin git@github.com:gautam-vinove/capistrano.git )
+  INFO [e922d1cf] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [32908e22] Running /usr/bin/env git remote update --prune as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [32908e22] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ddb3e2e91c23345a1fd.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [32908e22] 	Fetching origin
+  INFO [32908e22] Finished in 2.174 seconds with exit status 0 (successful).
+ DEBUG [5dca9292] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [5dca9292] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [5dca9292] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [40abac51] Running /usr/bin/env mkdir -p /var/www/my_rail_app/releases/20210627144557 as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [40abac51] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ddb3e2e91c23345a1fd.sh" ; /usr/bin/env mkdir -p /var/www/my_rail_app/releases/20210627144557 )
+  INFO [40abac51] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [f4535ebe] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/my_rail_app/releases/20210627144557 as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [f4535ebe] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ddb3e2e91c23345a1fd.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/my_rail_app/releases/20210627144557 )
+  INFO [f4535ebe] Finished in 0.029 seconds with exit status 0 (successful).
+ DEBUG [a4939f3b] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [a4939f3b] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [a4939f3b] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [0c646094] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [0c646094] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4ddb3e2e91c23345a1fd.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [0c646094] 	80073f4494d1b66a464679c881fa05eeb7d20ca4
+ DEBUG [0c646094] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [2ac77d57] Running if test ! -d /var/www/my_rail_app/releases/20210627144557; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627144557'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [2ac77d57] Command: if test ! -d /var/www/my_rail_app/releases/20210627144557; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627144557'" 1>&2; false; fi
+ DEBUG [2ac77d57] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [035ad43b] Running /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [035ad43b] Command: cd /var/www/my_rail_app/releases/20210627144557 && /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION
+  INFO [035ad43b] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [8c8a0963] Running if test ! -d /var/www/my_rail_app/releases/20210627144557; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627144557'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [8c8a0963] Command: if test ! -d /var/www/my_rail_app/releases/20210627144557; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627144557'" 1>&2; false; fi
+ DEBUG [8c8a0963] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [00386646] Running /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [00386646] Command: cd /var/www/my_rail_app/releases/20210627144557 && /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION
+  INFO [00386646] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [5b09d7d0] Running /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627144557 /var/www/my_rail_app/releases/current as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [5b09d7d0] Command: /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627144557 /var/www/my_rail_app/releases/current
+  INFO [5b09d7d0] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [0706e8f6] Running /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [0706e8f6] Command: /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app
+  INFO [0706e8f6] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [7a201949] Running /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627144557 /var/www/my_rail_app/releases/current as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [7a201949] Command: /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627144557 /var/www/my_rail_app/releases/current
+  INFO [7a201949] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [24811b2b] Running /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [24811b2b] Command: /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app
+  INFO [24811b2b] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [02b645c4] Running /usr/bin/env ls -x /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [02b645c4] Command: /usr/bin/env ls -x /var/www/my_rail_app/releases
+ DEBUG [02b645c4] 	20210627144557
+ DEBUG [02b645c4] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [97896852] Running /usr/bin/env ls -x /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [97896852] Command: /usr/bin/env ls -x /var/www/my_rail_app/releases
+ DEBUG [97896852] 	20210627144557
+ DEBUG [97896852] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [11e37004] Running if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [11e37004] Command: if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi
+ DEBUG [11e37004] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [9f18138a] Running /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627144557 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [9f18138a] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627144557 by ubuntu" >> /var/www/my_rail_app/revisions.log
+  INFO [9f18138a] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [d1ad343f] Running if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [d1ad343f] Command: if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi
+ DEBUG [d1ad343f] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [f4be0747] Running /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627144557 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [f4be0747] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627144557 by ubuntu" >> /var/www/my_rail_app/revisions.log
+  INFO [f4be0747] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-27 14:49:55 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fd5e96c2] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [fd5e96c2] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fd5e96c2] Finished in 0.498 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2e64335795d5e2d4bc16.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2e64335795d5e2d4bc16.sh 100.0%
+  INFO [1d5869e2] Running /usr/bin/env chmod 700 /tmp/git-ssh-2e64335795d5e2d4bc16.sh as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [1d5869e2] Command: /usr/bin/env chmod 700 /tmp/git-ssh-2e64335795d5e2d4bc16.sh
+  INFO [1d5869e2] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [63255f7c] Running /usr/bin/env git ls-remote git@github.com:gautam-vinove/capistrano.git HEAD as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [63255f7c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2e64335795d5e2d4bc16.sh" ; /usr/bin/env git ls-remote git@github.com:gautam-vinove/capistrano.git HEAD )
+ DEBUG [63255f7c] 	80073f4494d1b66a464679c881fa05eeb7d20ca4	HEAD
+  INFO [63255f7c] Finished in 2.143 seconds with exit status 0 (successful).
+  INFO [6f1c754f] Running /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [6f1c754f] Command: /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases
+  INFO [6f1c754f] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [1ad979a2] Running /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [1ad979a2] Command: /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases
+  INFO [1ad979a2] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [ee6b0aa2] Running [ -f /var/www/my_rail_app/current/REVISION ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [ee6b0aa2] Command: [ -f /var/www/my_rail_app/current/REVISION ]
+ DEBUG [ee6b0aa2] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [a602f8c8] Running [ -f /var/www/my_rail_app/current/REVISION ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [a602f8c8] Command: [ -f /var/www/my_rail_app/current/REVISION ]
+ DEBUG [a602f8c8] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [7df68d58] Running [ -f /var/www/my_rail_app/repo/HEAD ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [7df68d58] Command: [ -f /var/www/my_rail_app/repo/HEAD ]
+ DEBUG [7df68d58] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [63185c77] Running if test ! -d /var/www/my_rail_app; then echo "Directory does not exist '/var/www/my_rail_app'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [63185c77] Command: if test ! -d /var/www/my_rail_app; then echo "Directory does not exist '/var/www/my_rail_app'" 1>&2; false; fi
+ DEBUG [63185c77] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [d15f4415] Running /usr/bin/env git clone --mirror git@github.com:gautam-vinove/capistrano.git /var/www/my_rail_app/repo as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [d15f4415] Command: cd /var/www/my_rail_app && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2e64335795d5e2d4bc16.sh" ; /usr/bin/env git clone --mirror git@github.com:gautam-vinove/capistrano.git /var/www/my_rail_app/repo )
+ DEBUG [d15f4415] 	Cloning into bare repository '/var/www/my_rail_app/repo'...
+  INFO [d15f4415] Finished in 3.793 seconds with exit status 0 (successful).
+ DEBUG [acaf3b1b] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [acaf3b1b] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [acaf3b1b] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [e970c6c4] Running /usr/bin/env git remote set-url origin git@github.com:gautam-vinove/capistrano.git as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [e970c6c4] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2e64335795d5e2d4bc16.sh" ; /usr/bin/env git remote set-url origin git@github.com:gautam-vinove/capistrano.git )
+  INFO [e970c6c4] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [11c31825] Running /usr/bin/env git remote update --prune as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [11c31825] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2e64335795d5e2d4bc16.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [11c31825] 	Fetching origin
+  INFO [11c31825] Finished in 2.161 seconds with exit status 0 (successful).
+ DEBUG [8193f54d] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [8193f54d] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [8193f54d] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [ce2061b4] Running /usr/bin/env mkdir -p /var/www/my_rail_app/releases/20210627144958 as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [ce2061b4] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2e64335795d5e2d4bc16.sh" ; /usr/bin/env mkdir -p /var/www/my_rail_app/releases/20210627144958 )
+  INFO [ce2061b4] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [3e425923] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/my_rail_app/releases/20210627144958 as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [3e425923] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2e64335795d5e2d4bc16.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/my_rail_app/releases/20210627144958 )
+  INFO [3e425923] Finished in 0.030 seconds with exit status 0 (successful).
+ DEBUG [95beb74e] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [95beb74e] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [95beb74e] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [08c8c737] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [08c8c737] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2e64335795d5e2d4bc16.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [08c8c737] 	80073f4494d1b66a464679c881fa05eeb7d20ca4
+ DEBUG [08c8c737] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [79160948] Running if test ! -d /var/www/my_rail_app/releases/20210627144958; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627144958'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [79160948] Command: if test ! -d /var/www/my_rail_app/releases/20210627144958; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627144958'" 1>&2; false; fi
+ DEBUG [79160948] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [d840ac3f] Running /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [d840ac3f] Command: cd /var/www/my_rail_app/releases/20210627144958 && /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION
+  INFO [d840ac3f] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [046815e1] Running if test ! -d /var/www/my_rail_app/releases/20210627144958; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627144958'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [046815e1] Command: if test ! -d /var/www/my_rail_app/releases/20210627144958; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627144958'" 1>&2; false; fi
+ DEBUG [046815e1] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [7e1bf005] Running /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [7e1bf005] Command: cd /var/www/my_rail_app/releases/20210627144958 && /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION
+  INFO [7e1bf005] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [bcfc13f0] Running /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627144958 /var/www/my_rail_app/releases/current as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [bcfc13f0] Command: /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627144958 /var/www/my_rail_app/releases/current
+  INFO [bcfc13f0] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [aa6b0e1f] Running /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [aa6b0e1f] Command: /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app
+  INFO [aa6b0e1f] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [8c43b3b0] Running /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627144958 /var/www/my_rail_app/releases/current as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [8c43b3b0] Command: /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627144958 /var/www/my_rail_app/releases/current
+  INFO [8c43b3b0] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [fbec5d7f] Running /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [fbec5d7f] Command: /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app
+  INFO [fbec5d7f] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [3756ab2f] Running /usr/bin/env ls -x /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [3756ab2f] Command: /usr/bin/env ls -x /var/www/my_rail_app/releases
+ DEBUG [3756ab2f] 	20210627144958
+ DEBUG [3756ab2f] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [610c7695] Running /usr/bin/env ls -x /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [610c7695] Command: /usr/bin/env ls -x /var/www/my_rail_app/releases
+ DEBUG [610c7695] 	20210627144958
+ DEBUG [610c7695] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [0058bfff] Running if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [0058bfff] Command: if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi
+ DEBUG [0058bfff] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [70a0a955] Running /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627144958 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [70a0a955] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627144958 by ubuntu" >> /var/www/my_rail_app/revisions.log
+  INFO [70a0a955] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [1bbf2e50] Running if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [1bbf2e50] Command: if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi
+ DEBUG [1bbf2e50] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [d079c15c] Running /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627144958 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [d079c15c] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627144958 by ubuntu" >> /var/www/my_rail_app/revisions.log
+  INFO [d079c15c] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-27 15:03:13 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8b225cf5] Running /usr/bin/env mkdir -p /tmp as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [8b225cf5] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8b225cf5] Finished in 0.488 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-da7937d549a803041f56.sh 0.0%
+  INFO Uploading /tmp/git-ssh-da7937d549a803041f56.sh 100.0%
+  INFO [7c78857a] Running /usr/bin/env chmod 700 /tmp/git-ssh-da7937d549a803041f56.sh as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [7c78857a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-da7937d549a803041f56.sh
+  INFO [7c78857a] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [275cce2d] Running /usr/bin/env git ls-remote git@github.com:gautam-vinove/capistrano.git HEAD as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [275cce2d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-da7937d549a803041f56.sh" ; /usr/bin/env git ls-remote git@github.com:gautam-vinove/capistrano.git HEAD )
+ DEBUG [275cce2d] 	80073f4494d1b66a464679c881fa05eeb7d20ca4	HEAD
+  INFO [275cce2d] Finished in 2.150 seconds with exit status 0 (successful).
+  INFO [e7687e65] Running /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [e7687e65] Command: /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases
+  INFO [e7687e65] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [4242f00f] Running /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [4242f00f] Command: /usr/bin/env mkdir -p /var/www/my_rail_app/shared /var/www/my_rail_app/releases
+  INFO [4242f00f] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [5ef903bb] Running [ -f /var/www/my_rail_app/current/REVISION ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [5ef903bb] Command: [ -f /var/www/my_rail_app/current/REVISION ]
+ DEBUG [5ef903bb] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [524460f0] Running [ -f /var/www/my_rail_app/current/REVISION ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [524460f0] Command: [ -f /var/www/my_rail_app/current/REVISION ]
+ DEBUG [524460f0] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [5d26b5b8] Running [ -f /var/www/my_rail_app/repo/HEAD ] as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [5d26b5b8] Command: [ -f /var/www/my_rail_app/repo/HEAD ]
+ DEBUG [5d26b5b8] Finished in 0.003 seconds with exit status 1 (failed).
+ DEBUG [87c4b50a] Running if test ! -d /var/www/my_rail_app; then echo "Directory does not exist '/var/www/my_rail_app'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [87c4b50a] Command: if test ! -d /var/www/my_rail_app; then echo "Directory does not exist '/var/www/my_rail_app'" 1>&2; false; fi
+ DEBUG [87c4b50a] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [f0af49b3] Running /usr/bin/env git clone --mirror git@github.com:gautam-vinove/capistrano.git /var/www/my_rail_app/repo as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [f0af49b3] Command: cd /var/www/my_rail_app && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-da7937d549a803041f56.sh" ; /usr/bin/env git clone --mirror git@github.com:gautam-vinove/capistrano.git /var/www/my_rail_app/repo )
+ DEBUG [f0af49b3] 	Cloning into bare repository '/var/www/my_rail_app/repo'...
+  INFO [f0af49b3] Finished in 3.817 seconds with exit status 0 (successful).
+ DEBUG [882c57d5] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [882c57d5] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [882c57d5] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [013fe0cb] Running /usr/bin/env git remote set-url origin git@github.com:gautam-vinove/capistrano.git as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [013fe0cb] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-da7937d549a803041f56.sh" ; /usr/bin/env git remote set-url origin git@github.com:gautam-vinove/capistrano.git )
+  INFO [013fe0cb] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [a028b256] Running /usr/bin/env git remote update --prune as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [a028b256] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-da7937d549a803041f56.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [a028b256] 	Fetching origin
+  INFO [a028b256] Finished in 2.147 seconds with exit status 0 (successful).
+ DEBUG [89145a2c] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [89145a2c] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [89145a2c] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [6c6fb839] Running /usr/bin/env mkdir -p /var/www/my_rail_app/releases/20210627150316 as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [6c6fb839] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-da7937d549a803041f56.sh" ; /usr/bin/env mkdir -p /var/www/my_rail_app/releases/20210627150316 )
+  INFO [6c6fb839] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [8f2766a2] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/my_rail_app/releases/20210627150316 as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [8f2766a2] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-da7937d549a803041f56.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/my_rail_app/releases/20210627150316 )
+  INFO [8f2766a2] Finished in 0.029 seconds with exit status 0 (successful).
+ DEBUG [befc4044] Running if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [befc4044] Command: if test ! -d /var/www/my_rail_app/repo; then echo "Directory does not exist '/var/www/my_rail_app/repo'" 1>&2; false; fi
+ DEBUG [befc4044] Finished in 0.003 seconds with exit status 0 (successful).
+ DEBUG [4435e236] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [4435e236] Command: cd /var/www/my_rail_app/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-da7937d549a803041f56.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [4435e236] 	80073f4494d1b66a464679c881fa05eeb7d20ca4
+ DEBUG [4435e236] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [2e0612ca] Running if test ! -d /var/www/my_rail_app/releases/20210627150316; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627150316'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [2e0612ca] Command: if test ! -d /var/www/my_rail_app/releases/20210627150316; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627150316'" 1>&2; false; fi
+ DEBUG [2e0612ca] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [a67b0ae1] Running /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [a67b0ae1] Command: cd /var/www/my_rail_app/releases/20210627150316 && /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION
+  INFO [a67b0ae1] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [5250acce] Running if test ! -d /var/www/my_rail_app/releases/20210627150316; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627150316'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [5250acce] Command: if test ! -d /var/www/my_rail_app/releases/20210627150316; then echo "Directory does not exist '/var/www/my_rail_app/releases/20210627150316'" 1>&2; false; fi
+ DEBUG [5250acce] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [118e5658] Running /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [118e5658] Command: cd /var/www/my_rail_app/releases/20210627150316 && /usr/bin/env echo "80073f4494d1b66a464679c881fa05eeb7d20ca4" > REVISION
+  INFO [118e5658] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [c24b468d] Running /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627150316 /var/www/my_rail_app/releases/current as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [c24b468d] Command: /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627150316 /var/www/my_rail_app/releases/current
+  INFO [c24b468d] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [1b23c276] Running /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [1b23c276] Command: /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app
+  INFO [1b23c276] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [91273782] Running /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627150316 /var/www/my_rail_app/releases/current as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [91273782] Command: /usr/bin/env ln -s /var/www/my_rail_app/releases/20210627150316 /var/www/my_rail_app/releases/current
+  INFO [91273782] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [9526ef20] Running /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [9526ef20] Command: /usr/bin/env mv /var/www/my_rail_app/releases/current /var/www/my_rail_app
+  INFO [9526ef20] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [91398653] Running /usr/bin/env ls -x /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [91398653] Command: /usr/bin/env ls -x /var/www/my_rail_app/releases
+ DEBUG [91398653] 	20210627150316
+ DEBUG [91398653] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [390907a8] Running /usr/bin/env ls -x /var/www/my_rail_app/releases as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [390907a8] Command: /usr/bin/env ls -x /var/www/my_rail_app/releases
+ DEBUG [390907a8] 	20210627150316
+ DEBUG [390907a8] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [767e0c84] Running if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [767e0c84] Command: if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi
+ DEBUG [767e0c84] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [258941d9] Running /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627150316 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [258941d9] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627150316 by ubuntu" >> /var/www/my_rail_app/revisions.log
+  INFO [258941d9] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [688bcca6] Running if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [688bcca6] Command: if test ! -d /var/www/my_rail_app/releases; then echo "Directory does not exist '/var/www/my_rail_app/releases'" 1>&2; false; fi
+ DEBUG [688bcca6] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [2b91c284] Running /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627150316 by ubuntu" >> /var/www/my_rail_app/revisions.log as ubuntu@ec2-3-108-67-244.ap-south-1.compute.amazonaws.com
+ DEBUG [2b91c284] Command: cd /var/www/my_rail_app/releases && /usr/bin/env echo "Branch master (at 80073f4494d1b66a464679c881fa05eeb7d20ca4) deployed as release 20210627150316 by ubuntu" >> /var/www/my_rail_app/revisions.log
+  INFO [2b91c284] Finished in 0.004 seconds with exit status 0 (successful).
